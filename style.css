@@ -1,0 +1,98 @@
+/* Fonte e cores principais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1a2a40; /* azul escuro */
+  color: black;
+}
+
+.box {
+  background-color: #8B0000; /* vermelho escuro */
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.box h2 {
+  color: black;
+}
+
+/* Menu de navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 10px;
+}
+nav ul li a {
+  background-color: black; /* botões pretos */
+  color: white; /* letras brancas */
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* transição suave */
+}
+nav ul li a:hover {
+  background-color: #333; /* cinzento escuro */
+}
+
+/* Galeria de projetos com Flexbox */
+.projetos {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* responsivo */
+}
+.card {
+  background-color: white;
+  border: 2px solid #8B0000;
+  border-radius: 10px;
+  padding: 15px;
+  width: 220px;
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s; /* transição suave */
+}
+.card:hover {
+  transform: scale(1.05) rotate(-1deg); /* efeito zoom + inclinação */
+  box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+}
+.card h3 {
+  margin: 10px 0 5px;
+  color: black;
+}
+.card p {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Botões gerais */
+a, button {
+  display: inline-block;
+  margin-top: 10px;
+  background-color: black; /* botões pretos */
+  color: white; /* letras brancas */
+  padding: 8px 15px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* transição suave */
+}
+a:hover, button:hover {
+  background-color: #333;
+}
+
+/* Rodapé */
+footer {
+  background-color: #8B0000;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
